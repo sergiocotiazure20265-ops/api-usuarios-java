@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: api-usuarios
+
+  datasource:
+    url: jdbc:postgresql://localhost:5434/bd-usuarios
+    username: coti
+    password: coti
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8082
+
+jwt:
+  secret: 8211b810-2a94-425a-a0d8-26656156bbac
+  expiration: 3600000
